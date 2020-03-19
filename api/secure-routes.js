@@ -2,8 +2,7 @@
 const express = require('express');
 
 const router = express.Router();
-
-//Let's say the route below is very sensitive and we want only authorized users to have access
+//Lets say the route below is very sensitive and we want only authorized users to have access
 
 //Displays information tailored according to the logged in user
 router.get('/profile', (req, res, next) => {
@@ -14,5 +13,4 @@ router.get('/profile', (req, res, next) => {
     token : req.query.secret_token
   })
 });
-
 module.exports = router;
