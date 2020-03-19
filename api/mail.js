@@ -10,16 +10,16 @@ let mailTransporter = nodemailer.createTransport({
     port: 465,
     secure: false,
     auth: { 
-        user: 'beymedhabib@gmail.com',
+        user: 'amenbentoumi@gmail.com',
         pass: '***********'
     } 
 });
 router.post("/send", function (req,res) {
     let mailDetails = { 
-        from: '<beymedhabib@gmail.com>', 
-        to: '<beymedhabib@gmail.com>', 
+        from: '<amenbentoumi@gmail.com>', 
+        to: '<amen_allah@outlook.com>', 
         subject: 'Nodemail', 
-        html: '<p>Hello!</p><p>Mail send working</p>',
+        html: '<p>working!</p><p>Mail send working</p>',
         createTextFromHtml: true
     }; 
     mailTransporter.sendMail(mailDetails,(err, data)=> { 
